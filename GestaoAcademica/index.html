@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Acadêmica</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="wrapForm">
+        <h1>Cadastro de aluno</h1>
+
+        <div class="formAluno">
+            <div class="rowForm">
+                <div class="inputForm">
+                    <label for="nomeAluno">Nome completo:</label>
+                    <input id="nomeAluno" type="text" placeholder="Digite o nome do aluno">
+                </div>
+            </div>
+
+            <div class="rowForm">
+                <div class="inputGroup">
+                    <label for="cpfAluno">CPF:</label>
+                    <input id="cpfAluno" type="text" placeholder="000.000.000-00">
+                </div>
+
+                <div class="inputGroup">
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input id="dataNascimento" type="date" placeholder="00/00/0000">
+                </div>
+            </div>
+
+
+            <button class="btnCadastrar" onclick="cadastraAluno()">Cadastrar</button>
+        </div>
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="./scritp.js"></script>
+</body>
+</html>
