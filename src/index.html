@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Acadêmica</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="wrapGrid">
+        <div class="wrapForm">
+
+            <h1>Cadastro de aluno<span>.</span></h1>
+    
+            <div class="formAluno">
+                <div class="rowForm">
+                    <div class="inputForm">
+                        <label for="nomeAluno">Nome completo:</label>
+                        <input id="nomeAluno" type="text" placeholder="Digite o nome do aluno">
+                    </div>
+                </div>
+    
+                <div class="rowForm">
+                    <div class="inputGroup">
+                        <label for="cpfAluno">CPF:</label>
+                        <input id="cpfAluno" type="text" placeholder="000.000.000-00">
+                    </div>
+    
+                    <div class="inputGroup">
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input id="dataNascimento" type="date" placeholder="00/00/0000">
+                    </div>
+                </div>
+    
+                <div class="rowForm">
+                    <div class="inputGroup">
+                        <label for="matriculaAluno">Matrícula:</label>
+                        <input id="matriculaAluno" type="text" placeholder="00.000-0">
+                    </div>
+    
+                    <div class="inputGroup">
+                        <label for="sexoAluno">Sexo:</label>
+                        <select name="sexo" id="sexoAluno">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="rowForm">
+                    <div class="inputForm">
+                        <label for="maeAluno">Mãe do aluno:</label>
+                        <input id="maeAluno" type="text" placeholder="Digite o nome da mãe do aluno">
+                    </div>
+                </div>
+    
+                <div class="rowForm">
+                    <div class="inputForm">
+                        <label for="paiAluno">Pai do aluno:</label>
+                        <input id="paiAluno" type="text" placeholder="Digite o nome do pai do aluno">
+                    </div>
+                </div>
+    
+                <div class="rowForm">
+                    <div class="inputForm">
+                        <label for="enderecoAluno">Endereço do aluno:</label>
+                        <input id="enderecoAluno" type="text" placeholder="Ex: Av. 24 de Maio, nº 100 - São Paulo">
+                    </div>
+                </div>
+    
+                <div class="rowForm">
+                    <div class="inputGroup">
+                        <label for="emailAluno">E-mail:</label>
+                        <input id="emailAluno" type="text" placeholder="example@email.com">
+                    </div>
+    
+                    <div class="inputGroup">
+                        <label for="telAluno">Telefone:</label>
+                        <input id="telAluno" type="text" placeholder="(00) 0000-0000">
+                    </div>
+                </div>
+    
+                <button class="btnCadastrarAluno">Cadastrar aluno</button>
+                <div class="responseCadastro"></div>
+            </div>
+        </div>
+
+        <div class="wrapForm">
+
+            <div class="titleTurma">
+                <h1>Turma<span>.</span><span class="cTurma"></span></h1>
+                <h2>Matrículados: <span class="qtdMatriculados">0</span></h2>
+            </div>
+        
+            <div class="nTurma"></div>
+            
+            <div class="rowForm">
+                <div class="inputGroup">
+                    <label for="numMatricula">Número de matrícula:</label>
+                    <input id="numMatricula" type="text" placeholder="00.000-0">
+                </div>
+            </div>
+            <div class="rowForm">
+                <div class="inputGroup">
+                    <button class="btnRemoverAluno">Remover</button>
+                </div>
+                
+                <div class="inputGroup">
+                    <button class="btnMatricularAluno" type="submit">Matricular</button>
+                </div>
+            </div>
+            <div class="responseMatricula"></div>
+        </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="./scritp.js"></script>
+</body>
+</html>

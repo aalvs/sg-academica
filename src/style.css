@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-white:#fff;
+    --color-light:#f9f9f9;
+    --color-dark: #1f2429;
+    --color-pink: #f06;
+    --color-gray: #88969e;
+    --color-green:#02c39a;
+}
+
+html, body, button, input {
+    font-family: 'Asap', sans-serif;
+}
+
+button, input, select {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-light);
+}
+
+div.wrapGrid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+div.wrapForm {
+    width: 400px;
+    height: fit-content;
+    margin: 32px auto 0;
+    padding: 22px;
+    background-color: var(--color-white);
+    box-shadow: 0 25px 50px rgba(15,42,70,.06);
+}
+
+div.wrapForm h1 {
+    color: var(--color-dark);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+}
+
+div.wrapForm h1 span {
+    color: var(--color-pink);
+}
+
+div.formAluno {
+    margin: 0 auto;
+}
+
+div.rowForm {
+    display: flex;
+    margin-bottom: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.inputForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.inputForm input {
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+}
+
+div.inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+div.inputGroup input, div.inputGroup select {
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+}
+
+div.inputGroup input:hover, div.inputGroup select:hover, div.inputForm input:hover {
+    border-color: rgb(255, 0, 102, 0.4);
+}
+
+div.inputGroup input:focus, div.inputGroup select:focus, div.inputForm input:focus {
+    border-color: var(--color-pink);
+}
+
+div.inputForm label, div.inputGroup label {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--color-gray);
+    margin-bottom: 5px;
+}
+
+button.btnCadastrarAluno {
+    width: 100%;
+    height: 42px;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button.btnCadastrarAluno:hover {
+    opacity: 0.9;
+}
+
+div.responseCadastro {
+    color: var(--color-green);
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 12px;
+}
+
+button.btnMatricularAluno, button.btnRemoverAluno {
+    width: 100%;
+    height: 42px;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button.btnRemoverAluno {
+    width: 100%;
+    height: 42px;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+div.titleTurma {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.nTurma {
+    margin: 0 0 22px;
+    font-size: 18px;
+}
+
+div.titleTurma span.cTurma {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-gray);
+    margin-left: 8px;
+}
+
+div.titleTurma h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-gray);
+    background-color: var(--color-light);
+    padding: 6px 12px;
+}
